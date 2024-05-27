@@ -10,6 +10,6 @@ class SendMailView(APIView):
             'From Demo',  
             'This email from django simple message service', 
             settings.AWS_SES_FROM_EMAIL, 
-            ['@email.com'], 
+            ['perezmoon22@email.com'], 
         )
         return Response({"message": "Email sent successfully!"})
